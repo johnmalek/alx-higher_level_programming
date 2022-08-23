@@ -6,4 +6,5 @@ for n in range(0, 10):
                 print("{}{}".format(n, m), end=", ")
             else:
                 print("{}{}".format(n,m), end="\n")
-        
+        else:
+            continue
