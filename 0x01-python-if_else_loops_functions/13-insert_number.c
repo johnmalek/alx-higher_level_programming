@@ -50,3 +50,20 @@ listint_t *insert_node(listint_t **head, int number)
 	}
 	return (NULL); /* failed */
 }
+/**
+ * create_node - creates a new node for the LL
+ * @n: data to insert into new node
+ *
+ * Return: pointer to newly allocated node
+ */
+listint_t *create_node(int n)
+{
+	listint_t *ret = NULL;
+
+	ret = malloc(sizeof(listint_t));
+	if (!ret)
+		return (NULL);
+	ret->next = NULL;
+	ret->n = n;
+	return (ret);
+}
