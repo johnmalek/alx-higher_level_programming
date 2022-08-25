@@ -22,13 +22,13 @@ if __name__ == "__main__":
     else:
         if operand == "+":
             result = add(operator_1, operator_2)
-            print("{} {} {} = {}".format(operator_1, operand, operator_2, result))
+            print("{} + {} = {}".format(operator_1, operator_2, result))
         elif operand == "-":
             result = sub(operator_1, operator_2)
-            print("{} {} {} = {}".format(operator_1, operand, operator_2, result))
+            print("{} - {} = {}".format(operator_1, operator_2, result))
         elif operand == "*":
             result = mul(operator_1, operator_2)
-            print("{} {} {} = {}".format(operator_1, operand, operator_2, result))
+            print("{} * {} = {}".format(operator_1, operator_2, result))
         else:
             result = div(operator_1, operator_2)
-            print("{} {} {} = {}".format(operator_1, operand, operator_2, result))
+            print("{} / {} = {}".format(operator_1, operator_2, result))
