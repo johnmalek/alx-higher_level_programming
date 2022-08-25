@@ -5,6 +5,8 @@ arguments = sys.argv
 number_of_arguments = len(arguments) - 1
 if number_of_arguments == 1:
     print(f"{number_of_arguments} argument.")
+elif number_of_arguments == 0:
+    print(f"{number_of_arguments} arguments.")
 else:
     print(f"{number_of_arguments} arguments:")
 
