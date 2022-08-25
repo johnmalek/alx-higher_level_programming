@@ -12,8 +12,11 @@ if __name__ == "__main__":
 
     operator_1 = int(arguments[1])
     operator_2 = int(arguments[3])
+    operand = arguments[2]
 
-    if operand != "+" or operand != "-" or operand != "*" or operand != "/":
+    operators = ["+", "-", "*", "/"]
+
+    if operand not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
     else:
