@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 def add_tuple(tuple_a=(), tuple_b=()):
+
+    """
+    Adds 2 tuples
+    """
+
     len_a = len(tuple_a)
     len_b = len(tuple_b)
     new_tup = ()
