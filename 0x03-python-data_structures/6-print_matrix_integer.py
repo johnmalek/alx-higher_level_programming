@@ -9,8 +9,5 @@ def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         row_length = len(row)
         for i in range(row_length):
-            if i != row_length - 1:
-                print("{:d}".format(row[i]), end=" ")
-            else:
-                print("{:d}".format(row[i]), end=" ")
+            print("{:d}".format(row[i]), end=" " if i+1 < len(row) else "")
         print()
