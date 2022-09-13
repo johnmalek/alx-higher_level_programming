@@ -16,8 +16,7 @@ class Square:
     def size(self):
         """
         Method the allows access to the size attribute
-        Returns: 
-            The attribute size
+        Returns: The attribute size
         """
         return self.__size
 

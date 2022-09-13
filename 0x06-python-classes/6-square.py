@@ -42,7 +42,7 @@ class Square:
         """
         A method to set the value of the attribute position
         """
-        if type(value)is not tuple:
+        if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(value[0]) is not int or value[0] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -76,4 +76,3 @@ class Square:
                 for k in range(self.size):
                     print("#", end="")
                 print()
-

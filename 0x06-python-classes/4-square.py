@@ -2,12 +2,7 @@
 
 class Square:
     """
-    A class Square that defines a square by: 
-    - Private instance attribute: size
-    - property def size(self): to retrieve it
-    - property setter def size(self, value): to set it:
-    - Instantiation with optional size: def __init__(self, size=0):
-    - Public instance method: def area(self): that returns the current square area
+    A class Square that defines a square
     """
     def __init__(self, size=0):
         """The __init__ method for Square class
@@ -48,4 +43,3 @@ class Square:
         """
 
         return self.__size ** 2
-

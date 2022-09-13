@@ -2,9 +2,7 @@
 
 class Square:
     """
-    A class Square that defines a square by: 
-    - Private instance attribute: size
-    - Instantiation with optional size: def __init__(self, size=0):
+    A class Square that defines a square
     """
     def __init__(self, size=0):
         """
@@ -16,4 +14,3 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-
