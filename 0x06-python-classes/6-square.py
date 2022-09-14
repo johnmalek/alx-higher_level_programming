@@ -9,14 +9,14 @@ class Square:
     A square
     """
     def __init__(self, size=0, position=(0, 0)):
-            """
-            The __init__ method for the class
-            Args:
-                size (int): defines the size of the square
-                position (tuple): defines the position of the square
-            """
-            self.__size = size
-            self.__position = position
+        """
+        The __init__ method for the class
+        Args:
+            size (int): defines the size of the square
+            position (tuple): defines the position of the square
+        """
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -29,7 +29,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """ 
+        """
         Checks errors and setter for the size attribute
         Args:
             value: value to checking errors
