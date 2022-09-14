@@ -9,27 +9,33 @@ class Square:
     A square
     """
     def __init__(self, size=0, position=(0, 0)):
-        """
-        The __init__ method for the square class
-        Args:
-            size (int): The size of the square
-        """
-        self.__size = size
-        self.__position = position
+            """
+            The __init__ method for the class
+            Args:
+                size (int): defines the size of the square
+                position (tuple): defines the position of the square
+            """
+            self.__size = size
+            self.__position = position
 
     @property
     def size(self):
         """
-        A method the access the attribute size
+        A method to access the size of the square
         Returns:
-            The attribute size
+            The size of the square
         """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """
-        A method to set the value of size
+        """ 
+        Checks errors and setter for the size attribute
+        Args:
+            value: value to checking errors
+        Raises:
+            TypeError: Exception if size is not an integer
+            ValueError: Exception if size is less than zero
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
@@ -41,26 +47,28 @@ class Square:
     @property
     def position(self):
         """
-        A method to access the attribute position
+        A method to access the position attribute
         Returns:
-            The attribute position
+            The position of the square
         """
+        return self.__position
+
     @position.setter
     def position(self, value):
         """
-        check errors and setter for size attribute
+        Checks errors and setter for the postion attribute
         Args:
-            value: Value to checking errors
+            value: value to checking errors
         Raises:
             TypeError: Exception if size is not an integer
-            ValueError: Exception if size is less than zero
+            ValueErrr: Exception if size is less than zero
         """
-        if type(value) is not tuple:
+        if type(value) is not tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(value[0]) is not int or value[0] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(value[1]) is not int or value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
+            raise Valueerror("position must be a tuple of 2 positive integers")
+        elif type(value[1]) is not tuple or value[1] < 0:
+            raise ValueError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
@@ -74,9 +82,7 @@ class Square:
 
     def my_print(self):
         """
-        Prints in stdout
-        Returns:
-            Prints in stdout the square with the character #
+        Prints a square using # character
         """
         if self.__size == 0:
             print()
