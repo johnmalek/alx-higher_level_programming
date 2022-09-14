@@ -1,22 +1,27 @@
 #!/usr/bin/python3
+"""
+Defines a class square
+"""
+
 
 class Square:
     """
-    A class that efines a square
-    Args:
-        size (int) : defines the size of the square
+    A square
     """
     def __init__(self, size=0):
         """
         The __init__ method for the class Square
+        Args:
+            size (int): defines the size of the square
         """
         self.__size = size
 
     @property
     def size(self):
         """
-        Method the allows access to the size attribute
-        Returns: The attribute size
+        Method that allows access to the size attribute
+        Returns:
+            The attribute size
         """
         return self.__size
 
