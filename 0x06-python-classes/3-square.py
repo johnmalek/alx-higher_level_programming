@@ -1,14 +1,18 @@
 #!/usr/bin/python3
+"""
+Defines a class square
+"""
+
 
 class Square:
     """
-    A class Square that defines a square
+    A square
     """
     def __init__(self, size=0):
         """
         The __init__ method for the square class
         Args:
-            size: (:obj: 'int', optional): A private instance size
+            size: size of the square
         """
         if type(size) != int:
             raise TypeError("size must be an integer")
