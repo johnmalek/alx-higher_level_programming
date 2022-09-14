@@ -45,12 +45,15 @@ class Square:
         Returns:
             The attribute position
         """
-        return self.__position
-
     @position.setter
     def position(self, value):
         """
-        A method to set the value of the attribute position
+        check errors and setter for size attribute
+        Args:
+            value: Value to checking errors
+        Raises:
+            TypeError: Exception if size is not an integer
+            ValueError: Exception if size is less than zero
         """
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
