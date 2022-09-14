@@ -1,12 +1,18 @@
 #!/usr/bin/python3
+"""
+Defines a class square
+"""
+
 
 class Square:
     """
-    A class that defines a square
+    A square
     """
     def __init__(self, size=0, position=(0, 0)):
         """
         The __init__ method for the square class
+        Args:
+            size (int): The size of the square
         """
         self.__size = size
         self.__position = position
@@ -15,6 +21,8 @@ class Square:
     def size(self):
         """
         A method the access the attribute size
+        Returns:
+            The attribute size
         """
         return self.__size
 
@@ -34,6 +42,8 @@ class Square:
     def position(self):
         """
         A method to access the attribute position
+        Returns:
+            The attribute position
         """
         return self.__position
 
