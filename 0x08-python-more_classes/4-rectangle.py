@@ -107,9 +107,9 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Creates a string representation of the rectangle
+        Provides __repr__ method for object rectangle
         Returns:
-            A string representation f the rectangle
+            string: A string to get
         """
         return "Rectangle(" + str(self.__width) + "," + str(self.__height) +\
             ")"
