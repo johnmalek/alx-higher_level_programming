@@ -157,6 +157,6 @@ class Rectangle:
             cls: instance of rectangle
             size: size of new rectangle
         Returns:
-            A new rectangle instance 
+            A new rectangle instance
         """
         return cls(size, size)
