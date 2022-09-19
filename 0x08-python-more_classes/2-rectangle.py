@@ -3,7 +3,6 @@
 Defines a class rectangle
 """
 
-
 class Rectangle:
     """
     A rectangle
@@ -12,8 +11,8 @@ class Rectangle:
         """
         The __init__ method for the class
         Args:
-            width: width of the rectangle
-            height: height of the rectangle
+            width: the width of the rectangle
+            height: the height of the rectangle
         """
         self.width = width
         self.height = height
@@ -21,7 +20,7 @@ class Rectangle:
     @property
     def width(self):
         """
-        A method to access the width of the rectangle
+        A method to access the width attribute of the rectangle
         Returns:
             The width of the rectangle
         """
@@ -30,7 +29,7 @@ class Rectangle:
     @property
     def height(self):
         """
-        A method to access the height property of the rectangle
+        A method to access the height attribute of the rectangle
         Returns:
             The height of the rectangle
         """
@@ -39,12 +38,12 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        A method to set the width of the rectangle and check for errors
+        A method to set the value of the width and check for errors
         Args:
-            value: value to set the width as
+            value: value to the set the width as
         Raises:
             TypeError: if the value is not an integer
-            ValueError: if value is less than zero
+            ValueError: if the value is less than zero
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -56,9 +55,9 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """
-        A method to set the height of the rectangle and check for errors
+        A method to set the value of the height and check and for errors
         Args:
-            value : value to set the height as
+            value: value to set the height as
         Raises:
             TypeError: if the value is not an integer
             ValueError: if the value is less than zero
@@ -69,3 +68,22 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def area(self):
+        """
+        Calculates the area of the rectangle
+        Returns:
+            The area of the rectangle
+        """
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """
+        Calculates the perimeter of the rectangle
+        Returns:
+            The perimeter of the rectangle
+        """
+        if self.__width == 0 or self.__height == 0:
+            perimeter = 0
+        perimeter = 2 * (self.__width + self.__height)
+        return perimeter
