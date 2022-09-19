@@ -38,7 +38,7 @@ class Rectangle:
     @property
     def height(self):
         """
-        A method to access the height attribute of the rectangle and check for errors
+        A method to access the height of the rectangle and check for errors
         Returns:
             The height of the rectangle
         """
