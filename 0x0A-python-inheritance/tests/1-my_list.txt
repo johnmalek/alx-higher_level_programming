@@ -1,0 +1,59 @@
+============================================================
+'Tests for 1-my_list module'
+============================================================
+'Function to test: print_sorted(self) - inside MyLIST CLASS'
+============================================================
+
+>>> MyList = __import__('1-my_list').MyList
+
+'An empty list'
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+'A list of strings'
+>>> my_list = MyList()
+>>> my_list.append("John")
+>>> my_list.append("Malek")
+>>> my_list.append("Garang")
+["John", "Malek", "Garang"]
+
+'A list of int'
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.append(5)
+[1, 2, 5]
+
+'A list of tuples'
+>>> my_list = MyList()
+>>> my_list.append((1, 2, 4))
+>>> my_list.append((2, 4, 6))
+>>> my_list.append((1, 3, 5))
+[(1, 2, 4), (2, 4, 6), (1, 3, 5)]
+
+'A list of different types'
+>>> my_list = MyList()
+>>> my_list.append(8)
+>>> my_list.append(True)
+>>> my_list.append("Simon")
+>>> my_list.append(9.78)
+Traceback (most recent call last):
+...
+TypeError: unorderable types: str() < float()
+
+'A list of lists'
+>>> my_list = MyList()
+>>> my_list.append([1, 2, 3])
+>>> my_list.append([2, 4, 6])
+>>> my_list.append([1, 3, 5])
+[[1, 2, 3], [2, 4, 6], [1, 3, 5]]
+
+'A list of booleans'
+>>> my_list = MyList()
+>>> my_list.append(True)
+>>> my_list.append(True)
+>>> my_list.append(False)
+>>> my_list.append(False)
+>>> my_list.append(True)
+[True, True, False, Flase, True]
