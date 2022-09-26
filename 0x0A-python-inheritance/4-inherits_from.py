@@ -6,7 +6,7 @@ Defines a function
 
 def inherits_from(obj, a_class):
     """
-    Checks if an object is an instance of a class that it 
+    Checks if an object is an instance of a class that it
     inherited from
     Args:
         obj: The object to be checked

@@ -35,4 +35,4 @@ class Rectangle(BaseGeometry):
         """
         Prints the rectangle
         """
-        return "[Rectangle] " + str(self.__width) +  "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
