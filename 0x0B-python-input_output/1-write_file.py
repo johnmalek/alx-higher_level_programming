@@ -6,7 +6,7 @@ Defines a function
 
 def write_file(filename="", text=""):
     """
-    A function that writes a string to a text file 
+    A function that writes a string to a text file
     Args:
         filename: The file to be written to
         text: The text to write to the file
