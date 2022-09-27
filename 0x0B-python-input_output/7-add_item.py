@@ -18,5 +18,3 @@ for arg in range(len(arguments)):
         args_list.append(arguments[arg])
 try:
     save_to_json_file(args_list, filename)
-except:
-    pass
