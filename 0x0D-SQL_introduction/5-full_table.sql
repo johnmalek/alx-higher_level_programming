@@ -1,4 +1,4 @@
--- Display table using SELECT
+-- Display table using SHOW
 -- Print full description of table first_table
-SELECT * FROM first_table;
+SHOW CREATE TABLE first_table;
 
